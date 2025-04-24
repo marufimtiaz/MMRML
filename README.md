@@ -25,16 +25,16 @@ We leverage:
 
 ## 📂 Dataset
 
-We use publicly available EEG data sourced from the [OpenNeuro repository](https://openneuro.org/), specifically:
+We use publicly available EEG data sourced from the [OpenNeuro repository](https://openneuro.org/datasets/ds004504/versions/1.0.8), specifically:
 
-- **Dataset Title**: _Resting-State EEG in Alzheimer's Disease and Frontotemporal Dementia_
-- **Subjects**: 60 individuals total
-  - 30 Alzheimer's Disease (AD) patients
-  - 15 Frontotemporal Dementia (FTD) patients
-  - 15 Healthy Controls (HC)
+- **Dataset Title**: _A dataset of EEG recordings from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects_
+- **Subjects**: 69 individuals total
+  - 23 Alzheimer's Disease (AD) patients
+  - 23 Frontotemporal Dementia (FTD) patients
+  - 23 Healthy Controls (HC)
 - **Data Format**: `.set` files (EEGLAB format)
-- **Channels**: 64-channel EEG
-- **Duration**: 5-minute resting-state (eyes-closed)
+- **Channels**: 19-channel EEG
+- **Duration**: 8-minute resting-state (eyes-closed)
 
 🔗 **Note**: Due to licensing and privacy concerns, raw EEG data is not included in this repository. You must download it manually from OpenNeuro and place it in the `data/` folder as per folder structure.
 
@@ -65,7 +65,6 @@ We use publicly available EEG data sourced from the [OpenNeuro repository](https
 
 ```
 MMRML/
-├── data/                 # EEG dataset (download manually)
 ├── preprocessing/        # Filtering and artifact removal
 ├── microstate_analysis/  # GFP peak detection, clustering
 ├── features/             # Microstate parameter extraction
